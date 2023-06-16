@@ -1,0 +1,148 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+
+
+@font-face {
+    font-family: 'orbitronregular';
+    src: url('fonts/orbitron-variablefont_wght-webfont.woff') format('woff2'),
+         url('fonts/orbitron-variablefont_wght-webfont.woff2') format('woff');
+}
+
+/* Color Theme Swatches in Hex */
+.NILE-VALLEY-|-part-two-1-hex { color: #07D9D9; }
+.NILE-VALLEY-|-part-two-2-hex { color: #F2E527; }
+.NILE-VALLEY-|-part-two-3-hex { color: #F28907; }
+.NILE-VALLEY-|-part-two-4-hex { color: #D93F07; }
+.NILE-VALLEY-|-part-two-5-hex { color: #730C02; }
+
+/* Color Theme Swatches in RGBA */
+.NILE-VALLEY-|-part-two-1-rgba { color: rgba(6, 216, 216, 1); }
+.NILE-VALLEY-|-part-two-2-rgba { color: rgba(242, 228, 38, 1); }
+.NILE-VALLEY-|-part-two-3-rgba { color: rgba(242, 136, 7, 1); }
+.NILE-VALLEY-|-part-two-4-rgba { color: rgba(216, 62, 6, 1); }
+.NILE-VALLEY-|-part-two-5-rgba { color: rgba(114, 11, 2, 1); }
+
+/* Color Theme Swatches in HSLA */
+.NILE-VALLEY-|-part-two-1-hsla { color: hsla(180, 94, 43, 1); }
+.NILE-VALLEY-|-part-two-2-hsla { color: hsla(56, 88, 55, 1); }
+.NILE-VALLEY-|-part-two-3-hsla { color: hsla(33, 94, 48, 1); }
+.NILE-VALLEY-|-part-two-4-hsla { color: hsla(16, 94, 43, 1); }
+.NILE-VALLEY-|-part-two-5-hsla { color: hsla(5, 96, 22, 1); }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: Helvetica, sans-serif; */
+}
+
+body{
+    background-color: #f6f6f6;
+}
+
+h1{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: blanchedalmond;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2, h1{
+    font-family: 'orbitronregular', sans-serif;
+    font-weight: bold;
+    /* font-family: 'M ontserrat', sans-serif;*/
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.welcome{
+    text-align: center;
+    color: #001735;
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 50px;
+    display: block !important;
+}
+
+/* -------------------- HEADER -------------------- */
+
+.header{
+    background-image: url(images/landing-Backgroung.gif);   
+    width: 100%;
+    width: auto;
+    height: 800px;
+    margin-bottom: 50px;
+    display: flex;
+    position: relative;
+}
+
+/* -------------------- SECTION COLORS -------------------- */
+
+.color-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------- SUBTITLES -------------------- */
+
+h2, p{
+    margin: 0 auto;
+    display: inline;
+    margin-top: 10px;
+    color: blanchedalmond;
+    
+}
+
+.subtitle{
+    width: 30%;
+    background-color: #540015;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content{
+    width: 70%;
+    height: 400px;
+}
+
+/* -------------------- SECTION FONTS -------------------- */
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 5px;
+
+}
+
+.impaire{
+    /* background-image: url(images/back-1.png); */
+    background:linear-gradient(to top,#001735 ,#8E0336);
+}
+
+.paire{
+    /* background-image: url(images/back-2.png); */
+    background:linear-gradient(to top, #8E0336,#001735);
+}
+
