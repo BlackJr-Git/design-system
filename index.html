@@ -9,7 +9,12 @@
 <body>
     <header class="header">
         <nav class="navbar">
-
+            <div class="blur">
+                <li> <a href="#color"> <ion-icon name="color-palette"></ion-icon></a> </li>
+                <li> <a href="#font"> <ion-icon name="text"></ion-icon></a> </li>
+                <li> <a href="#footer"> <ion-icon name="alert-circle"></ion-icon> </a></li>
+                <li> <a href="#footer"> <ion-icon name="chatbox-ellipses"></ion-icon> </a></li>
+            </div>          
         </nav>
         <section class="landing">
             <div class="landing-text">
@@ -18,7 +23,7 @@
         </section>
     </header>
     <p class="welcome">Your Gaming Website Style Guide</p>
-    <section class="color-section">
+    <section id="color" class="section">
         <div class="subtitle impaire">
             <h2>COLOR</h2>
             <p>Les couleurs pour vos Design</p>
@@ -57,7 +62,7 @@
         </div>
     </section>
     
-    <section class="color-section">
+    <section id="font" class="section">
         <div class="subtitle paire">
             <h2>GAMES FONTS</h2>
             <p>Les Polices pour vos titres de jeux </p>
@@ -81,7 +86,7 @@
         </div>
     </section>
 
-    <section class="color-section">
+    <section class="section">
         <div class="subtitle impaire">
             <h2>FONTS</h2>
             <p>Les Polices pour vos sous-titre et corps de texte de jeux </p>
@@ -105,37 +110,37 @@
         </div>
     </section>
 
-    <section class="color-section">
+    <section class="section">
         <div class="subtitle paire">
             <h2>FONTS USES</h2>
             <p>Les Polices pour vos sous-titre et corps de texte de jeux </p>
         </div>
-        <div class="content">
-            <div class="font">
-                <p class="font-title">H1 : <br> Heading</p>
+        <div class="uses">
+            <div>
+                <p class="font-title">H1 : Heading</p>
                 <p>
                     <ul>
-                        <li>Font-weight: 700 (bold)</li>
+                        <li>Font-weight: 700</li>
                         <li>Font-size: 50px</li>
-                        <li>Font-family: Super Mario</li>
+                        <li>Font-family: SuperM</li>
                     </ul>
                 </p>
             </div>
-            <div class="font">
+            <div>
                 <p class="font-title">H2 : Subheading</p>
                 <p>
                     <ul>
-                        <li>Font-weight: 500 (Medium)</li>
+                        <li>Font-weight: 500</li>
                         <li>Font-size: 40px</li>
                         <li>Font-family: Roboto</li>
                     </ul>
                 </p>
             </div>
-            <div class="font">
+            <div >
                 <p class="font-title">P : Paragraphes</p>
                 <p>
                     <ul>
-                        <li>Font-weight: 400 (Regular)</li>
+                        <li>Font-weight: 400</li>
                         <li>Font-size: 20px</li>
                         <li>Font-family: Roboto</li>
                     </ul>
@@ -143,7 +148,16 @@
             </div>
         </div>
     </section>
-    
 
+    <section class="exemple">
+
+    </section>
+
+    <footer id="footer" class="footer">
+        <p> Ce site a pour but d'aider les jeunes devellopeurs a construire leurs site de gaming avec plus de facilite profiter bien de sont utiliter</p>
+        
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
