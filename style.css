@@ -76,18 +76,19 @@ html{
 
 body{
     /* background-color: #f6f6f6; */
-    background-color: #B7BAC3;
+    background-color: #373739;
     background-size: cover;
-    background-image: url(images/2143848.jpg);
+    background-image: url(images/back-body.png);
     background-size: contain;
+
 }
 
 .landing h1 {
-    color: blanchedalmond;
+    color: #FF0049;
     position: absolute;
-    top: 40%;
-    left: 60%;
-    font-size: 50px;
+    top: 390px;
+    left: 50px;  
+    font-size: 70px;
     font-weight: bold;
 }
 
@@ -108,18 +109,34 @@ p{
     font-weight: 800;
     font-size: 50px;
     margin-bottom: 50px;
+    z-index: 1;
 }
 
 /* -------------------- HEADER -------------------- */
 
 .header{
-    background-image: url(images/2143848.jpg); 
+    /* background-image: url(images/back-final.png);  */
     background-repeat: no-repeat;  
     width: 100%;
     height: 800px;
-    margin-bottom: 50px;
+    margin-bottom: -60px;
     display: flex;
     position: relative;
+    /* background-color: #dbdfe6; */
+}
+
+.logo{
+    margin-right: 300px;
+    width: 150px;
+}
+
+a{
+    color: #f6f6f6;
+}
+
+header a:hover ion-icon {
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 /* -------------------- SECTIONS -------------------- */
@@ -167,13 +184,13 @@ p{
 
 .impaire{
     /* background-image: url(images/back-1.png); */
-    background:linear-gradient(to top,#001735 ,#8E0336);
+    background:linear-gradient(to top,#212123 ,#FF0049);
     border-radius: 10px Opx 0px 10px;
 }
 
 .paire{
     /* background-image: url(images/back-2.png); */
-    background:linear-gradient(to top, #8E0336,#001735);
+    background:linear-gradient(to top, #FF0049,#212123);
     border-radius: 10px Opx 0px 10px;
 }
 
@@ -399,7 +416,7 @@ li{
 .navbar{
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 100%;
     height: 80px;
     padding: 20px 0;
     background-color: rgba(255, 255, 255, 0.2);
@@ -407,11 +424,11 @@ li{
     backdrop-filter: blur(5px);
     border-top: 1px solid rgba(125, 125, 125, 1);
     border-left: 1px solid rgba(125, 125, 125, 1);
-    margin: 10px 250px;
+    
     border-radius: 10px;
 
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -420,7 +437,7 @@ li{
 }
 
 .navbar li{
-    color: blanchedalmond;
+    color: #FF0049;
     margin: 0 50px;
 
 }
@@ -429,13 +446,11 @@ ion-icon{
     font-size: 40px;
 }
 
-a{
-    color: #f6f6f6;
-}
+
 /* -------------- EXEMPLE -------------------- */
 
 .exemple{
-    background-color: #8E0336;
+    background-color: #373739;
     width: 100%;
     height: 400px;
 }
@@ -446,7 +461,7 @@ a{
 footer{
     height: 400px;
     width: 100%;
-    background:linear-gradient(to bottom, #8E0336,#001735);
+    background:linear-gradient(to bottom, #FF0049,#212123);
     display: grid;
     grid-template-areas: "head head head"
                          "side cont cont"
@@ -459,36 +474,11 @@ footer p{
 }
 
 
-.head{
-    grid-area: head;
-    background-color: #001735;
-    height: 400px;
+.logo-footer{
+    
 }
 
-.cont{
-    grid-area: cont;
-    background-color: #730C02;
-    height: 400px;
-    width: auto;
-}
 
-.side{
-    grid-area: side;
-    background-color: #07D9D9;
-    width: 33%;
-}
-
-.foot{
-    grid-area: foot;
-    background-color: #0F0F0F;
-    height: 400px;
-}
-
-.cont{
-    grid-area: cont;
-    background-color: #730C02;
-    height: 400px;
-}
 
 
 
