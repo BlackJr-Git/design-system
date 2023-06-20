@@ -30,33 +30,33 @@
             <p>Les couleurs pour vos Design</p>
         </div>
         <div class="content">
-            <div class="color a">
+            <div class="color color-blue">
                 <div class="color-details">
-                    <p>Navy blue</p>
+                    <p>Blue</p>
                     <p>#07D9D9</p>
                 </div>
             </div>
-            <div class="color b">
+            <div class="color color-yellow">
                 <div class="color-details">
-                    <p>Navy blue</p>
+                    <p>Yellow</p>
                     <p>#F2E527</p>
                 </div>
             </div>
-            <div class="color c">
+            <div class="color color-orange">
                 <div class="color-details">
-                    <p>Navy blue</p>
+                    <p>Orange</p>
                     <p>#F28907</p>
                 </div>
             </div>
-            <div class="color d">
+            <div class="color color-dark-orange">
                 <div class="color-details">
-                    <p>Navy blue</p>
+                    <p>Dark-Orange</p>
                     <p>#D93F07</p>
                 </div>
             </div>
-            <div class="color e">
+            <div class="color color-chocolate">
                 <div class="color-details">
-                    <p>Navy blue</p>
+                    <p>Chocolate</p>
                     <p>#730C02</p>                  
                 </div>
             </div>
@@ -70,18 +70,18 @@
         </div>
         <div class="content">
             <div class="font">
-                <p class="mario-font font-title">SUPER MARIO</p>
-                <p class="mario-font">a B c d e <br> f g h j k L 
-                    <br> m n o p q <br> r s t u v <br> w x y z</p>
+                <p class="spider-font font-title">SPIDER MAN</p>
+                <p class="spider-font">A B C D E <br> F G H I J K L 
+                    <br> M N O P Q <br> R S T U V <br> W X Y Z</p>
             </div>
             <div class="font">
-                <p class="pokemon-font font-title">POKEMON</p>
-                <p class="pokemon-font">a b c d e f <br>  g h j k l 
+                <p class="avengers-font font-title">AVENGERS</p>
+                <p class="avengers-font">a b c d e f <br>  g h j k l 
                     m n  <br> o p q r s t<br> u v w x y z</p>
             </div>
             <div class="font">
-                <p class="snacker-font font-title">SNACKER</p>
-                <p class="snacker-font">a b c d e f <br>  g h j k l 
+                <p class="naruto-font font-title">NARUTO</p>
+                <p class="naruto-font">a b c d e f <br>  g h j k l 
                     m n  <br> o p q r s t<br> u v w x y z</p>
             </div>
         </div>
@@ -104,7 +104,7 @@
                     m n o p q <br>  r s t u v w x y z</p>
             </div>
             <div class="font">
-                <p class="ubuntu-font font-title">SNACKER</p>
+                <p class="ubuntu-font font-title">UBUNTU</p>
                 <p class="ubuntu-font">a b c d e f g h<br> j k l 
                     m n o p q <br>  r s t u v w x y z</p>
             </div>
@@ -150,15 +150,43 @@
         </div>
     </section>
 
-    <section class="exemple">
+    <footer id="footer" >
 
-    </section>
+        <section class="footer" >
+            <div class="footer-img"><a href=""><img class="logo-footer" src="images/logoLOGO.png" alt="logo game over"></a>
+            </div>
 
-    <footer id="footer" class="footer">
-        <a href=""><img class="logo-footer" src="images/logoLOGO.svg" alt="logo game over"></a>
-        <p> Ce site a pour but d'aider les jeunes devellopeurs a construire leurs site de gaming avec plus de facilite profiter bien de sont utiliter</p>
+            <div class="footer-text"><p> Ce site a pour but d'aider les jeunes devellopeurs a construire leurs site de gaming 
+                avec plus de facilité</p>
+            </div>
+
+            <div class="contact">
+                <p>Pour tout conseil veuillez nous contacter sur nos differents canaux</p>
+                <form action="/envoyer-message" method="POST">
+                    <label for="nom">Nom complet:</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="email">Adresse e-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <input type="submit" value="Envoyer">
+                  </form>
+                
+            </div>
+        </section>
+
+        <section class="social-netword">
+            <a href=""><ion-icon name="logo-whatsapp"></ion-icon>+243 851 750 853</a>
+            <a href=""><ion-icon name="logo-facebook"></ion-icon>Junior Asosa</a>
+            <a href=""><ion-icon name="logo-github"></ion-icon>Black-Jr</a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon>Junior Asosa</a>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon>Junior Asosa</a>
+        </section>
         
-    
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

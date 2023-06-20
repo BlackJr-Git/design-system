@@ -37,29 +37,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ninja_narutoregular';
+    src: url('fonts/njnaruto-webfont.woff2') format('woff2'),
+         url('fonts/njnaruto-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avengeance_mightiest_avengeRg';
+    src: url('fonts/avengeance_mightiest_avenger-webfont.woff2') format('woff2'),
+         url('fonts/avengeance_mightiest_avenger-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'the_amazing_spider-manregular';
+    src: url('fonts/the_amazing_spider-man-webfont.woff2') format('woff2'),
+         url('fonts/the_amazing_spider-man-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* FONTS ENDS */
-
-/* Color Theme Swatches in Hex */
-.NILE-VALLEY-|-part-two-1-hex { color: #07D9D9; }
-.NILE-VALLEY-|-part-two-2-hex { color: #F2E527; }
-.NILE-VALLEY-|-part-two-3-hex { color: #F28907; }
-.NILE-VALLEY-|-part-two-4-hex { color: #D93F07; }
-.NILE-VALLEY-|-part-two-5-hex { color: #730C02; }
-
-/* Color Theme Swatches in RGBA */
-.NILE-VALLEY-|-part-two-1-rgba { color: rgba(6, 216, 216, 1); }
-.NILE-VALLEY-|-part-two-2-rgba { color: rgba(242, 228, 38, 1); }
-.NILE-VALLEY-|-part-two-3-rgba { color: rgba(242, 136, 7, 1); }
-.NILE-VALLEY-|-part-two-4-rgba { color: rgba(216, 62, 6, 1); }
-.NILE-VALLEY-|-part-two-5-rgba { color: rgba(114, 11, 2, 1); }
-
-/* Color Theme Swatches in HSLA */
-.NILE-VALLEY-|-part-two-1-hsla { color: hsla(180, 94, 43, 1); }
-.NILE-VALLEY-|-part-two-2-hsla { color: hsla(56, 88, 55, 1); }
-.NILE-VALLEY-|-part-two-3-hsla { color: hsla(33, 94, 48, 1); }
-.NILE-VALLEY-|-part-two-4-hsla { color: hsla(16, 94, 43, 1); }
-.NILE-VALLEY-|-part-two-5-hsla { color: hsla(5, 96, 22, 1); }
-
 
 
 *{
@@ -67,6 +72,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    box-shadow: 0 0 0 3px inset red ;
 }
 
 html{
@@ -75,21 +81,42 @@ html{
 }
 
 body{
-    /* background-color: #f6f6f6; */
     background-color: #373739;
     background-size: cover;
     background-image: url(images/back-body.png);
     background-size: contain;
+    text-decoration: none;
+}
+
+/*------------------------ NAVBAR----------------- */
+
+.navbar{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(125, 125, 125, 1);
+    border-left: 1px solid rgba(125, 125, 125, 1);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.blur{
+    display: flex;
+}
+
+.navbar li{
+    color: #FF0049;
+    margin: 0 50px;
 
 }
 
-.landing h1 {
-    color: #FF0049;
-    position: absolute;
-    top: 390px;
-    left: 50px;  
-    font-size: 70px;
-    font-weight: bold;
+ion-icon{
+    font-size: 40px;
 }
 
 h1{
@@ -105,7 +132,6 @@ p{
 
 .welcome{
     text-align: center;
-    /* color: #001735; */
     font-weight: 800;
     font-size: 50px;
     margin-bottom: 50px;
@@ -115,14 +141,11 @@ p{
 /* -------------------- HEADER -------------------- */
 
 .header{
-    /* background-image: url(images/back-final.png);  */
+    display: flex;
+    position: relative;
     background-repeat: no-repeat;  
     width: 100%;
     height: 800px;
-    margin-bottom: -60px;
-    display: flex;
-    position: relative;
-    /* background-color: #dbdfe6; */
 }
 
 .logo{
@@ -132,11 +155,21 @@ p{
 
 a{
     color: #f6f6f6;
+    text-decoration: none;
 }
 
 header a:hover ion-icon {
     transform: scale(1.2);
     transition: 1s;
+}
+
+.landing h1 {
+    color: #FF0049;
+    position: absolute;
+    top: 390px;
+    left: 50px;  
+    font-size: 70px;
+    font-weight: bold;
 }
 
 /* -------------------- SECTIONS -------------------- */
@@ -161,7 +194,7 @@ header a:hover ion-icon {
     margin: 0 auto;
     display: inline;
     margin-top: 10px;
-    color: blanchedalmond;
+    color: white;
     font-size: 40px;
 }
 
@@ -169,7 +202,7 @@ header a:hover ion-icon {
     margin: 0 auto;
     display: inline;
     margin-top: 10px;
-    color: blanchedalmond;
+    color: white;
     text-align: center;
 }
 
@@ -183,13 +216,11 @@ header a:hover ion-icon {
 }
 
 .impaire{
-    /* background-image: url(images/back-1.png); */
     background:linear-gradient(to top,#212123 ,#FF0049);
     border-radius: 10px Opx 0px 10px;
 }
 
 .paire{
-    /* background-image: url(images/back-2.png); */
     background:linear-gradient(to top, #FF0049,#212123);
     border-radius: 10px Opx 0px 10px;
 }
@@ -223,23 +254,18 @@ header a:hover ion-icon {
 
 .color:hover .color-details{
     transition: 2s ease-in-out;
-    transform: translateY(150px);
 }
-
-
-
-
 
 .color-details p{
     text-align: center;
 }
 
-.a{
+.color-blue{
     background-color: #07D9D9 ;
     box-shadow: 2px 5px 5px rgba(6, 216, 216, 0.5);
 }
 
-.a:hover{
+.color-blue:hover{
     box-shadow: 0 0 10px #07D9D9,
                 0 0 10px #07D9D9,
                 0 0 20px #07D9D9;
@@ -248,12 +274,12 @@ header a:hover ion-icon {
     transition: 1s ease-in-out;
 }
 
-.b{
+.color-yellow{
     background-color: #F2E527 ;
     box-shadow: 2px 5px 5px rgba(242, 228, 38, 0.5);
 }
 
-.b:hover{
+.color-yellow:hover{
     box-shadow: 0 0 10px #F2E527,
                 0 0 10px #F2E527,
                 0 0 20px #F2E527;
@@ -262,12 +288,12 @@ header a:hover ion-icon {
     transition: 1s ease-in-out;
 }
 
-.c{
+.color-orange{
     background-color: #F28907;
     box-shadow: 2px 5px 5px rgba(242, 136, 7, 0.5);
 }
 
-.c:hover{
+.color-orange:hover{
     box-shadow: 0 0 10px #F28907,
                 0 0 10px #F28907,
                 0 0 20px #F28907;
@@ -276,12 +302,12 @@ header a:hover ion-icon {
     transition: 1s ease-in-out;
 }
 
-.d{
+.color-dark-orange{
     background-color: #D93F07 ;
     box-shadow: 2px 5px 5px  rgba(216, 62, 6, 0.5);
 }
 
-.d:hover{
+.color-dark-orange:hover{
     box-shadow: 0 0 10px #D93F07,
                 0 0 10px #D93F07,
                 0 0 20px #D93F07;
@@ -290,12 +316,12 @@ header a:hover ion-icon {
     transition: 1s ease-in-out;
 }
 
-.e{
+.color-chocolate{
     background-color: #730C02 ;
     box-shadow: 2px 5px 5px rgba(114, 11, 2, 0.5);
 }
 
-.e:hover{
+.color-chocolate:hover{
     box-shadow: 0 0 10px #730C02,
                 0 0 10px #730C02,
                 0 0 20px #730C02;
@@ -318,27 +344,27 @@ header a:hover ion-icon {
     transition: 1s;
 }
 
-.mario-font{
-    font-family: 'super_mario_256regular' ;
+.spider-font{
+    font-family: 'the_amazing_spider-manregular' ;
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin: auto;
     margin-top: 50px;
 }
 
-.pokemon-font{
-    font-family: 'pokemon_solidnormal' ;
-    color: #dbdfe6;
+.avengers-font{
+    font-family: 'avengeance_mightiest_avengeRg' ;
+    color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     margin: auto;
     margin-top: 50px;
 }
 
-.snacker-font{
-    font-family: 'snacker_comic_personal_use_Rg' ;
-    color: #001735;
+.naruto-font{
+    font-family: 'ninja_narutoregular' ;
+    color: white;
     text-align: center;
     font-size: 40px;
     margin: auto;
@@ -347,7 +373,7 @@ header a:hover ion-icon {
 
 .roboto-font{
     font-family: 'Roboto', sans-serif;
-    color: #001735;
+    color: white;
     text-align: center;
     font-size: 30px;
     margin: auto;
@@ -357,7 +383,7 @@ header a:hover ion-icon {
 
 .lato-font{
     font-family: 'Lato', sans-serif;
-    color: #001735;
+    color: white;
     text-align: center;
     font-size: 30px;
     margin: auto;
@@ -366,7 +392,7 @@ header a:hover ion-icon {
 
 .ubuntu-font{
     font-family: 'Ubuntu', sans-serif;
-    color: #001735;
+    color: white;
     text-align: center;
     font-size: 30px;
     margin: auto;
@@ -376,13 +402,13 @@ header a:hover ion-icon {
 .font-title{
     font-size: 40px;
     font-weight: bold;
-    color: blanchedalmond;
+    color:white;
 }
 
 /* ------------ FONTS USES --------------- */
 
 .font p{
-    color: blanchedalmond;
+    color: white;
     text-align: center;
     margin-top: 60px;
 }
@@ -408,64 +434,19 @@ li{
 .uses{ 
     width: 70%;
     height: 400px;
-    color: blanchedalmond;
-}
-
-/*------------------------ NAVBAR----------------- */
-
-.navbar{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 80px;
-    padding: 20px 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    
-    backdrop-filter: blur(5px);
-    border-top: 1px solid rgba(125, 125, 125, 1);
-    border-left: 1px solid rgba(125, 125, 125, 1);
-    
-    border-radius: 10px;
-
-    position: fixed;
-    z-index: 2;
-
-}
-
-.blur{
-    display: flex;
-}
-
-.navbar li{
-    color: #FF0049;
-    margin: 0 50px;
-
-}
-
-ion-icon{
-    font-size: 40px;
+    color: white;
 }
 
 
 /* -------------- EXEMPLE -------------------- */
 
-.exemple{
-    background-color: #373739;
-    width: 100%;
-    height: 400px;
-}
-
-
 /* -------------- FOOTER -------------------- */
 
-footer{
+.footer{
+    display: flex;
     height: 400px;
     width: 100%;
     background:linear-gradient(to bottom, #FF0049,#212123);
-    display: grid;
-    grid-template-areas: "head head head"
-                         "side cont cont"
-                         "foot foot foot";
 }
 
 footer p{
@@ -475,10 +456,105 @@ footer p{
 
 
 .logo-footer{
-    
+    width: 400px;
+    transform-origin: top;
+    vertical-align: middle;
+}
+footer div{
+    width: 33%;
+}
+
+.social-netword {
+    background-color: #212123;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+}
+
+.social-netword a {
+    margin: 20px;
+    align-items: center;
+}
+
+.social-netword ion-icon {
+    vertical-align: middle;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+input[type="submit"]:hover {
+    background-color: #FF0049;
+}
+
+input[type="submit"] {
+    background-color: #FF0049;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+}
+
+input, textarea {
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #FF0049;
+    border-radius: 5px;
+    width: 500px;
+}
+
+label {
+    margin-top: 10px;
+    color: white;
 }
 
 
+@media screen and (max-width: 1150px) {
+    .section {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .content{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+    }
 
+    .subtitle{
+        width: 100%;
+    }
 
+    .color{
+        margin: 20px;
+    }
+
+    input, textarea {
+        width: 300px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .footer{
+        display: block;
+    }
+
+}
